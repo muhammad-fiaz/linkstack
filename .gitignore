@@ -1,0 +1,138 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+.pnp/
+.pnp.js
+
+# Build output
+build/
+dist/
+dist-ssr/
+public/build/
+
+# Vite cache
+.vite/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment files
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Mac system files
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows system files
+Desktop.ini
+$RECYCLE.BIN/
+
+# npm package lock
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lock
+
+# Coverage directory
+coverage/
+
+# Misc
+*.tgz
+*.bak
+*.tmp
+*.temp
+
+# VS Code settings
+.history/
+
+# JetBrains IDEs
+*.iml
+.idea/
+
+# SASS cache
+.sass-cache/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+yarn-integrity
+
+# dotenv environment variables file
+.env.*
+
+# Parcel-bundler cache
+.cache/
+.parcel-cache/
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# Gatsby files
+.cache/
+public/
+
+# Storybook build outputs
+.out/
+.storybook-out/
+
+# Svelte build output
+.svelte-kit/
+
+# Firebase build output
+.firebase/
+
+# VS Code workspace storage
+.vscode-test/
+
+# Mac Quick Look
+.AppleDouble
+
+# Windows image file caches
+Thumbs.db
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*/
