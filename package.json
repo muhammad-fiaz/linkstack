@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "terser": "^5.43.1",
-    "typescript": "~5.8.3",
+    "typescript": "~5.9.2",
     "vite": "^7.0.4"
   },
   "dependencies": {
