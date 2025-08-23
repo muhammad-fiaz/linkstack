@@ -37,7 +37,7 @@ export const links: LinkItem[] = [
     delay: "0.4s"
   },
   {
-    href: "https://discord.gg/TEY6eYkw",
+  href: "https://discord.gg/zvqm4VZ3Pk",
     icon: "💬",
     name: "Discord Server",
     description: "Join the Fiaz's Community",
@@ -98,5 +98,41 @@ export const links: LinkItem[] = [
     colorClass: "bg-white border-gray-100 text-red-400",
     hoverClass: "hover:border-red-400 group-hover:text-red-600",
     delay: "1.45s"
-  }
+  },
+    {
+      href: "https://orcid.org/0009-0001-5935-7878",
+      icon: "🆔",
+      name: "ORCID",
+      description: "My ORCID researcher profile",
+      colorClass: "bg-white border-gray-100 text-green-600",
+      hoverClass: "hover:border-green-600 group-hover:text-green-800",
+      delay: "1.6s"
+    },
+    {
+      href: "https://dly.to/LQm0vGkFCsi",
+      icon: "📰",
+      name: "daily.dev Community",
+  description: "Discover new AI tools, AI resources, and empowering developers with the latest technology updates.",
+      colorClass: "bg-white border-gray-100 text-indigo-500",
+      hoverClass: "hover:border-indigo-500 group-hover:text-indigo-700",
+      delay: "1.75s"
+    },
+    {
+      href: "https://app.daily.dev/muhammadfiaz",
+      icon: "🌟",
+      name: "daily.dev Profile",
+      description: "My daily.dev developer profile",
+      colorClass: "bg-white border-gray-100 text-blue-600",
+      hoverClass: "hover:border-blue-600 group-hover:text-blue-800",
+      delay: "1.9s"
+    },
+    {
+      href: "https://fiaz.dev",
+      icon: "🚀",
+      name: "Fiaz Technologies",
+      description: "Explore developer-first and user-centric technologies, next-generation solutions, and more.",
+      colorClass: "bg-white border-gray-100 text-purple-600",
+      hoverClass: "hover:border-purple-600 group-hover:text-purple-800",
+      delay: "2.05s"
+    }
 ];
