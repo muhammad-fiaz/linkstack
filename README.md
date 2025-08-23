@@ -1,4 +1,36 @@
-# Linkstack
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/63712592-53fc-4fba-97d3-2f3677d69c65" alt="preview" width="700"/>
+</p>
+<h1 align="center">LinkStack</h1>
+
+<p align="center">
+  <!-- GitHub -->
+  <a href="https://github.com/muhammad-fiaz/linkstack/stargazers">
+    <img src="https://img.shields.io/github/stars/muhammad-fiaz/linkstack?style=for-the-badge&logo=github" alt="GitHub Stars"/>
+  </a>
+  <a href="https://github.com/muhammad-fiaz/linkstack/forks">
+    <img src="https://img.shields.io/github/forks/muhammad-fiaz/linkstack?style=for-the-badge&logo=github" alt="GitHub Forks"/>
+  </a>
+  <a href="https://github.com/muhammad-fiaz/linkstack/issues">
+    <img src="https://img.shields.io/github/issues/muhammad-fiaz/linkstack?style=for-the-badge&logo=github" alt="Issues"/>
+  </a>
+  <a href="https://github.com/muhammad-fiaz/linkstack/pulls">
+    <img src="https://img.shields.io/github/issues-pr/muhammad-fiaz/linkstack?style=for-the-badge&logo=github" alt="Pull Requests"/>
+  </a>
+  <a href="https://github.com/muhammad-fiaz/linkstack/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/muhammad-fiaz/linkstack?style=for-the-badge" alt="License"/>
+  </a>
+  <a href="https://github.com/muhammad-fiaz">
+    <img src="https://img.shields.io/badge/Author-Muhammad%20Fiaz-blue?style=for-the-badge" alt="Author"/>
+  </a>
+  <img src="https://img.shields.io/github/repo-size/muhammad-fiaz/linkstack?style=for-the-badge" alt="Repo Size"/>
+  <img src="https://img.shields.io/github/languages/top/muhammad-fiaz/linkstack?style=for-the-badge" alt="Top Language"/>
+  <img src="https://img.shields.io/github/last-commit/muhammad-fiaz/linkstack?style=for-the-badge" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/contributors/muhammad-fiaz/linkstack?style=for-the-badge" alt="Contributors"/>
+  <img src="https://img.shields.io/badge/Open%20Source-❤-red?style=for-the-badge" alt="Open Source"/>
+  <img src="https://img.shields.io/badge/Platform-GitHub-black?style=for-the-badge&logo=github" alt="Platform"/>
+</p>
+
 
 **Linkstack** is a self-hosted, customizable "link in bio" solution inspired by Linktree. Organize and share all your important links—portfolio, social profiles, donation pages, and more—on a single, beautifully designed landing page using your own domain.
 
