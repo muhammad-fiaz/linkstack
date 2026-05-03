@@ -37,3 +37,10 @@
   animation-delay: 12s;
 }
 
+.gtm-iframe {
+  display: none;
+  height: 0;
+  visibility: hidden;
+  width: 0;
+}
+

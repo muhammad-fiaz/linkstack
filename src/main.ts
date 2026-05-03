@@ -3,6 +3,64 @@
 
 import { links } from './links';
 
+const DEFAULT_GTM_ID = 'GTM-5BQ5RPW2';
+const DEFAULT_GA_ID = 'G-SDJ0K1Y70X';
+
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+const DATA_GTM_ATTR = 'data-gtm';
+const DATA_GA_ATTR = 'data-ga';
+
+function ensureDataLayer(): unknown[] {
+  if (!window.dataLayer) {
+    window.dataLayer = [];
+  }
+  return window.dataLayer;
+}
+
+function initGoogleTagManager(gtmId: string) {
+  if (!gtmId) return;
+  if (document.querySelector(`script[${DATA_GTM_ATTR}]`)) return;
+
+  const dataLayer = ensureDataLayer();
+  dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+
+  const script = document.createElement('script');
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtm.js?id=${encodeURIComponent(gtmId)}`;
+  script.setAttribute(DATA_GTM_ATTR, 'true');
+  document.head.appendChild(script);
+}
+
+function initGoogleAnalytics(gaId: string) {
+  if (!gaId) return;
+  if (!document.querySelector(`script[${DATA_GA_ATTR}]`)) {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaId)}`;
+    script.setAttribute(DATA_GA_ATTR, 'true');
+    document.head.appendChild(script);
+  }
+
+  const dataLayer = ensureDataLayer();
+  const gtag = (...args: unknown[]) => {
+    dataLayer.push(args);
+  };
+  window.gtag = window.gtag || gtag;
+  window.gtag('js', new Date());
+  window.gtag('config', gaId, { anonymize_ip: true });
+}
+
+function initAnalytics() {
+  initGoogleTagManager(DEFAULT_GTM_ID);
+  initGoogleAnalytics(DEFAULT_GA_ID);
+}
+
 
 function renderLinks() {
   const container = document.getElementById('links-container');
@@ -14,7 +72,8 @@ function renderLinks() {
     const a = document.createElement('a');
     a.href = link.href;
     a.target = '_blank';
-    a.rel = 'noopener noreferrer';
+    a.rel = 'noopener noreferrer external';
+    a.referrerPolicy = 'no-referrer-when-downgrade';
     a.setAttribute('aria-label', `${link.name} - ${link.description}`);
     a.setAttribute('tabindex', '0');
     a.className = `group flex items-center gap-3 px-5 py-3 rounded-xl shadow border transition-all duration-500 opacity-0 translate-y-8 animate-slideup ${link.colorClass || ''} ${link.hoverClass || ''}`;
@@ -33,6 +92,7 @@ function renderLinks() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+  initAnalytics();
   renderLinks();
   // Animate fade-in for all fade-in elements
   document.querySelectorAll('.fade-in').forEach((el, i) => {
