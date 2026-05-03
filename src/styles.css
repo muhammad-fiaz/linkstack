@@ -17,3 +17,23 @@
   }
 }
 
+.min-h-dvh {
+  min-height: 100dvh;
+}
+
+.bg-orb-delay-0 {
+  animation-delay: 0s;
+}
+
+.bg-orb-delay-4 {
+  animation-delay: 4s;
+}
+
+.bg-orb-delay-8 {
+  animation-delay: 8s;
+}
+
+.bg-orb-delay-12 {
+  animation-delay: 12s;
+}
+

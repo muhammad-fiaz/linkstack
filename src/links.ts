@@ -55,7 +55,7 @@ export const links: LinkItem[] = [
     delay: "0.85s"
   },
   {
-    href: "http://muhammadfiaz.com",
+    href: "https://muhammadfiaz.com",
     icon: "🌐",
     name: "Portfolio",
     description: "Visit my main website",
@@ -118,12 +118,30 @@ export const links: LinkItem[] = [
       delay: "1.9s"
     },
     {
+      href: "https://www.youtube.com/@muhammad_fiaz",
+      icon: "📺",
+      name: "YouTube",
+      description: "Subscribe for videos and updates",
+      colorClass: "bg-white border-gray-100 text-red-500",
+      hoverClass: "hover:border-red-500 group-hover:text-red-600",
+      delay: "2.05s"
+    },
+    {
+      href: "https://www.instagram.com/muhammadfiaz.dev",
+      icon: "📸",
+      name: "Instagram",
+      description: "Follow my creator updates",
+      colorClass: "bg-white border-gray-100 text-pink-500",
+      hoverClass: "hover:border-pink-500 group-hover:text-pink-600",
+      delay: "2.2s"
+    },
+    {
       href: "https://fiaztechnologies.github.io",
       icon: "🚀",
       name: "Fiaz Technologies",
       description: "Explore developer-first and user-centric technologies, next-generation solutions, and more.",
       colorClass: "bg-white border-gray-100 text-purple-600",
       hoverClass: "hover:border-purple-600 group-hover:text-purple-800",
-      delay: "2.05s"
+      delay: "2.35s"
     }
 ];
