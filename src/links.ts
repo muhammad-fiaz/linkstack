@@ -37,15 +37,6 @@ export const links: LinkItem[] = [
     delay: "0.4s"
   },
   {
-  href: "https://discord.gg/zvqm4VZ3Pk",
-    icon: "💬",
-    name: "Discord Server",
-    description: "Join the Fiaz's Community",
-    colorClass: "bg-white border-gray-100 text-indigo-500",
-    hoverClass: "hover:border-indigo-400 group-hover:text-indigo-700",
-    delay: "0.55s"
-  },
-  {
     href: "https://www.linkedin.com/in/muhammad-fiaz-",
     icon: "🔗",
     name: "LinkedIn",
@@ -73,7 +64,7 @@ export const links: LinkItem[] = [
     delay: "1s"
   },
   {
-    href: "https://twitter.com/muhammadfiaz_",
+    href: "https://x.com/muhammadfiaz_",
     icon: "🐦",
     name: "Twitter (X)",
     description: "Follow me for updates",
@@ -127,7 +118,7 @@ export const links: LinkItem[] = [
       delay: "1.9s"
     },
     {
-      href: "https://fiaz.dev",
+      href: "https://fiaztechnologies.github.io",
       icon: "🚀",
       name: "Fiaz Technologies",
       description: "Explore developer-first and user-centric technologies, next-generation solutions, and more.",
